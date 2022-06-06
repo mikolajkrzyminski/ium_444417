@@ -26,7 +26,7 @@ for i in range(k):
         name = "Dev"
     else:
         name = "Test"
-    df.to_csv(cwd + './Participants_Data_HPP/' + name + '.csv', index=False)
+    df.to_csv('./Participants_Data_HPP/' + name + '.csv', index=False)
 
 #df_1 = pd.read_csv("../Participants_Data_HPP/Dev.csv")
 
