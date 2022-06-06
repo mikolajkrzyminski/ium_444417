@@ -5,9 +5,8 @@ import pandas as pd
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
-cwd = os.path.abspath(os.path.dirname(sys.argv[0]))
 modelPath = 'MyModel_tf'
-pathTest = cwd + "/../Participants_Data_HPP/Test.csv"
+pathTest = "./Participants_Data_HPP/Test.csv"
 
 features = ["UNDER_CONSTRUCTION", "RERA", "BHK_NO.", "SQUARE_FT", "READY_TO_MOVE", "RESALE", "LONGITUDE", "LATITUDE", "TARGET(PRICE_IN_LACS)"]
 
