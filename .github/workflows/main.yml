@@ -17,4 +17,4 @@ jobs:
           pip3 install tensorflow
           pip3 install keras
           python task1python.py
-          python trainScript.py
+          python trainScript.py 5
