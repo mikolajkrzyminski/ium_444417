@@ -3,11 +3,9 @@ import sys
 import pandas as pd
 
 
-cwd = os.path.abspath(os.path.dirname(sys.argv[0]))
-
 # paths
-filePathTest = cwd + "./Participants_Data_HPP/Train.csv"
-filePathTrain = cwd + "./Participants_Data_HPP/Test.csv"
+filePathTest = "./Participants_Data_HPP/Train.csv"
+filePathTrain = "./Participants_Data_HPP/Test.csv"
 
 dataTest = pd.read_csv(filePathTest)
 dataTrain = pd.read_csv(filePathTrain)
@@ -36,7 +34,7 @@ for i in range(k):
 
 #df_2 = pd.read_csv("../Participants_Data_HPP/Train.csv")
 
-dataPath = cwd + './Participants_Data_HPP/Train.csv'
+dataPath = './Participants_Data_HPP/Train.csv'
 
 #data informations
 data = pd.read_csv(dataPath)
