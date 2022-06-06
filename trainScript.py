@@ -91,6 +91,6 @@ flatten_pred = flatten(pred)
 # print("predictions: " + str(flatten_pred))
 # print("expected: " + str(np.array(labels_test_sample)))
 
-with open("/../result.txt", "w+") as resultFile:
+with open("./result.txt", "w+") as resultFile:
   resultFile.write("predictions: " + str(flatten_pred) + '\n')
   resultFile.write("expected: " + str(labels_test_sample.to_numpy()))
