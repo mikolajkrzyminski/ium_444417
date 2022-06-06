@@ -10,10 +10,9 @@ import matplotlib.pyplot as plt
 #train params
 numberOfEpoch = sys.argv[1]
 
-cwd = os.path.abspath(os.path.dirname(sys.argv[0]))
 
-pathTrain = cwd + "./Participants_Data_HPP/Train.csv"
-pathTest = cwd + "./Participants_Data_HPP/Test.csv"
+pathTrain = "./Participants_Data_HPP/Train.csv"
+pathTest = "./Participants_Data_HPP/Test.csv"
 
 features = ["UNDER_CONSTRUCTION", "RERA", "BHK_NO.", "SQUARE_FT", "READY_TO_MOVE", "RESALE", "LONGITUDE", "LATITUDE", "TARGET(PRICE_IN_LACS)"]
 
@@ -92,6 +91,6 @@ flatten_pred = flatten(pred)
 # print("predictions: " + str(flatten_pred))
 # print("expected: " + str(np.array(labels_test_sample)))
 
-with open(cwd + "/../result.txt", "w+") as resultFile:
+with open("/../result.txt", "w+") as resultFile:
   resultFile.write("predictions: " + str(flatten_pred) + '\n')
   resultFile.write("expected: " + str(labels_test_sample.to_numpy()))
