@@ -16,5 +16,5 @@ jobs:
           pip3 install matplotlib
           pip3 install tensorflow
           pip3 install keras
-          python ./lab10/task1python.py
-          python ./lab10/trainScript.py
+          python task1python.py
+          python trainScript.py
