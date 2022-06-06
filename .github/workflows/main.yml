@@ -18,3 +18,8 @@ jobs:
           pip3 install keras
           python task1python.py
           python trainScript.py 5
+          python evalScript.py
+          
+          cat trainResults.csv >> raport.md
+          cml-send-comment raport.md
+          cml-send-github-check raport.md
